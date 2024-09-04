@@ -1,0 +1,1 @@
+select * from {{source ('sourcedb', 'MY_FIRST_DBT_MODEL')}}
