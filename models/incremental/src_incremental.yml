@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  name: incremental
+    database: raw
+    schema: jaffle_shop
+    tables:
+      name: customers
+      name: orders
+
+models:
+    - name: inc_orders
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                
