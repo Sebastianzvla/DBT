@@ -1,9 +1,10 @@
 version: 2
 sources:
     - name: sourcedb
-      database: ANALYTICS
-      schema: DBT_SZAVALA
-      tables:
-        - name: MY_FIRST_DBT_MODEL
+      database: RAW
+      schema: JAFFLE_SHOP
+      tables: 
+        - name: CUSTOMERS
+        - name: ORDERS
           
             
