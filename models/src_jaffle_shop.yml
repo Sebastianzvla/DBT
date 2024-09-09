@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  
+  - name: jaffle_shop
+    database: raw
+    schema: jaffle_shop
+    tables:
+      - name: customers
+        columns:
+          - name: id
+            description: "The primary key for the customers"
+            tests:
+                - unique
+      - name: orders
+ 
+  - name: stripe
+    database: raw
+    schema: stripe
+    tables:
+    - name: payment
+      columns:
+          - name: id
+            description: "The primary key for the orders"
+            tests:
+                - unique
